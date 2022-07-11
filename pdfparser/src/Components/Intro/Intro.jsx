@@ -8,7 +8,7 @@ import thumbup from '../../img/thumbup.png';
 import crown from '../../img/crown.png';
 import newpdf from '../../img/newpdf.png';
 import pdf from '../../img/pdf.png';
-import FloatinDiv from "../FloatingDiv/FloatingDiv";
+import FloatingDiv from "../FloatingDiv/FloatingDiv";
 
 const Intro = () => {
   return (
@@ -32,11 +32,22 @@ const Intro = () => {
             <img src={Vector2} alt=""/>
             <img src={pdf} alt=""/>
             <img src={newpdf} alt=""/>
-        <div style={{top: '-4% ',left: '68%'}}>
-        <FloatinDiv image={crown} txt1='Extract'  txt2='Developer'/>
+        <div style={{top: '-4% ',left: '55%'}}>
+        <FloatingDiv image={crown} txt1='Extract'  txt2='Information'/>
         </div>
         <div style={{top:'18rem',left:'0rem'}}>
-      <FloatinDiv image={thumbup} txt1='Upload' txt2='Files'/>
+      <FloatingDiv image={thumbup} txt1='Upload' txt2='Files'/>
+        </div>
+        
+        <div className='blur' style={{background:"rgb(238 210 255)"}}></div>
+        <div className="blur"
+        style={{
+          background:'#C2F5FF',
+          top:'17rem',
+          width:'21rem',
+          height:'11rem',
+          left:'-9rem'
+        }}>
         </div>
         </div>
         </div>

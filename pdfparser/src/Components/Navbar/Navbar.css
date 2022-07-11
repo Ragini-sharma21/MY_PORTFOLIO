@@ -22,11 +22,12 @@
     display: flex;
     align-items: center;
      justify-content: flex-end; 
-    font-weight: 400;
+    font-weight: bold;
   }
   
   .n-list {
     flex: 10;
+    
   }
   .n-list > ul {
     display: flex;
