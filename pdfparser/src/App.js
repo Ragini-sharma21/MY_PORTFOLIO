@@ -5,6 +5,7 @@ import Intro from "./Components/Intro/Intro";
 import About from './Components/About/About';
 import Works from './Components/Works/Works';
 import Reviews from './Components/Reviews/Reviews';
+import Contact from './Components/Contact/Contact';
 import "./App.css";
 
  function App() {
@@ -15,6 +16,7 @@ import "./App.css";
     <About/>
     <Works/>
     <Reviews/>
+    <Contact/>
       
     </div>
   )
