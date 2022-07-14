@@ -3,14 +3,18 @@ import "./About.css"
 import round from "../../img/round.png";
 import Card from "../Card/Card";
 import Sample from './Sample.pdf'
+import {themeContext} from "../../Context";
+import {useContext} from "react";
 
 const Services = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
 
         <div className="about" id="about">
       {/* left side */}
       <div className="awesome">
-        <span >More About</span>
+        <span style={{ color: darkMode ? "white" : "" }}>More About</span>
         <span> Our services</span>
         <spane>
           Lorem ispum is simpley dummy text of printing of printing Lorem
