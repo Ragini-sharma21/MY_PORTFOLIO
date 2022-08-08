@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "emailjs": "^4.0.0"
+    "emailjs": "^4.0.0",
+    "swiper": "^8.3.1"
   }
 }

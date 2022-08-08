@@ -9,6 +9,7 @@ import {Pagination} from "swiper";
 import 'swiper/css/pagination';
 import 'swiper/css'
 
+
 const Reviews = () => {
     const clients = [ //array method
         {
@@ -33,7 +34,7 @@ const Reviews = () => {
         },
       ];
   return (
-    <div className="t-wrapper" id="testimonial">
+    <div className="t-wrapper" id="t-wrapper">
       <div className="t-heading">
         <span>Our Clients </span>
         <span>Exceptional Reviews </span>

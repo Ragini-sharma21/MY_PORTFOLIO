@@ -2,13 +2,20 @@ import React from 'react'
 import "./About.css"
 import round from "../../img/round.png";
 import Card from "../Card/Card";
-import Sample from './Sample.pdf'
+import Resume from './Ragini_sharma_Resume.pdf'
 import {themeContext} from "../../Context";
 import {useContext} from "react";
+import { motion } from "framer-motion";
+
 
 const Services = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
+  const transition = {
+    duration: 2,
+    type: "spring",
+  };
   return (
 
         <div className="about" id="about">
@@ -21,33 +28,48 @@ const Services = () => {
           <br />
           ispum is simpley dummy text of printing
         </spane>
-        <a href={Sample} download>
-          <button className="button s-button">See Samples</button>
+        <a href={Resume} download>
+          <button className="button s-button">Resume</button>
         </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       {/* right */}
       <div className="cards">
         {/* first card */}
+        <motion.div
+          initial={{ left: "32rem" }}
+          whileInView={{ left: "21rem" }} //24
+          transition={transition}
+        >
         
-        <div style={{left:'24rem'}}>
+        
           <Card
             emoji={round}
             heading={"Reliable"}
             detail={"Most Reliable Site on the Internet .Your details are safe and secure"}
           />
-    </div>
+    </motion.div>
         {/* second card */}
-        <div style={{top:"12rem",left:"6rem"}}>
+        
+        <motion.div
+          initial={{ left: "-4rem", top: "12rem" }}
+          whileInView={{ left: "3rem" }}//top:"12rem",left:"6rem"
+          transition={transition}
+        >
+        
           <Card
             emoji={round}
             heading={"Easy Use"}
             detail={"The Site is very easy to use and requires no prior knowledge"}
           />
-          </div>
+          </motion.div>
         
         {/* 3rd */}
-        <div  style={{top:"19rem",left:"22rem"}}>
+        <motion.div
+          initial={{ top: "19rem", left: "32rem" }}
+          whileInView={{ left: "19rem" }} //top:"19rem",left:"22rem"
+          transition={transition}
+        >
           <Card
             emoji={round}
             heading={"Trusted"}
@@ -56,7 +78,7 @@ const Services = () => {
             }
             color="rgba(252, 166, 31, 0.45)"
           />
-          </div>
+          </motion.div>
         
         <div
           className="blur s-blur2"
